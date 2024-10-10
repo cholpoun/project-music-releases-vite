@@ -76,7 +76,7 @@ h1 {
   margin: 0 5px;
 }
 
-.play-button:hover
+.play-button:hover,
 .favorite-button:hover {
   transform: scale(1.8); 
 }
