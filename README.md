@@ -28,7 +28,7 @@ Describe how you approached to problem, and what tools and techniques you used t
 
 ### View it live
 
-https://spotifymockup.netlify.app 
+https://spotifymockup.netlify.app/ 
 
 ## Instructions
 
