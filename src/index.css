@@ -11,3 +11,113 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.albums-container {
+  padding: 20px;
+  background-color: #121212; /* Dark background to fit Spotify's look */
+}
+
+.albums-list {
+  display: grid;
+  gap: 20px;
+}
+
+/* Responsive Grid for Desktop, Tablet, and Mobile */
+@media (min-width: 1024px) {
+  .albums-list {
+    grid-template-columns: repeat(4, 1fr); /* 4 albums per row on desktop */
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  .albums-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 albums per row on tablet */
+  }
+}
+
+@media (max-width: 599px) {
+  .albums-list {
+    grid-template-columns: 1fr; /* 1 album per row on mobile */
+  }
+}
+
+.album-card {
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.album-card:hover {
+  background-color: #333333; /* Darker shade on hover */
+}
+
+.album-cover-container {
+  position: relative;
+}
+
+.album-cover {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.album-cover-container:hover .hover-overlay {
+  opacity: 1;
+}
+
+.play-button,
+.favorite-button,
+.options-button {
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin: 0 5px;
+}
+
+.play-button:hover {
+  transform: scale(1.2);
+}
+
+.album-title {
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.artist-names {
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  color: #a0a0a0;
+}
+
+.artist-link {
+  text-decoration: none;
+  color: #a0a0a0;
+  transition: color 0.3s;
+}
+
+.artist-link:hover {
+  color: #ffffff; /* Change to white on hover to match the design */
+}
+
+h1 {
+ color: #ffffff;
+}
