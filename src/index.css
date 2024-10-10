@@ -26,24 +26,6 @@ h1 {
   gap: 20px;
 }
 
-@media (min-width: 1024px) {
-  .albums-list {
-    grid-template-columns: repeat(4, 1fr); /* 4 albums per row on desktop */
-  }
-}
-
-@media (min-width: 600px) and (max-width: 1023px) {
-  .albums-list {
-    grid-template-columns: repeat(2, 1fr); /* 2 albums per row on tablet */
-  }
-}
-
-@media (max-width: 599px) {
-  .albums-list {
-    grid-template-columns: 1fr; /* 1 album per row on mobile */
-  }
-}
-
 .album-card {
   position: relative;
   cursor: pointer;
@@ -127,4 +109,25 @@ h1 {
 
 .artist-link {
   color: #a0a0a0;
+}
+
+
+/* Media queries  */
+
+@media (min-width: 1024px) {
+  .albums-list {
+    grid-template-columns: repeat(4, 1fr); /* 4 albums per row on desktop */
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  .albums-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 albums per row on tablet */
+  }
+}
+
+@media (max-width: 599px) {
+  .albums-list {
+    grid-template-columns: 1fr; /* 1 album per row on mobile */
+  }
 }
