@@ -18,7 +18,7 @@ h1 {
 
 .albums-container {
   padding: 20px;
-  background-color: #121212; /* Dark background for Spotify-like look */
+  background-color: #121212; 
 }
 
 .albums-list {
@@ -51,7 +51,7 @@ h1 {
 }
 
 .album-card:hover {
-  background-color: #333333; /* Darker shade on hover */
+  background-color: #333333; 
 }
 
 .album-cover-container {
@@ -95,7 +95,7 @@ h1 {
 }
 
 .play-button:hover {
-  transform: scale(1.8); /* Grow on hover */
+  transform: scale(1.8); 
 }
 
 .album-title,
@@ -107,7 +107,7 @@ h1 {
 
 .album-title:hover,
 .artist-link:hover {
-  color: #ffffff; /* Change to white on hover */
+  color: #ffffff;
   text-decoration: underline;
 }
 
