@@ -14,7 +14,7 @@ code {
 
 .albums-container {
   padding: 20px;
-  background-color: #121212; /* Dark background to fit Spotify's look */
+  background-color: #121212; /* Dark background for Spotify-like look */
 }
 
 .albums-list {
@@ -22,7 +22,6 @@ code {
   gap: 20px;
 }
 
-/* Responsive Grid for Desktop, Tablet, and Mobile */
 @media (min-width: 1024px) {
   .albums-list {
     grid-template-columns: repeat(4, 1fr); /* 4 albums per row on desktop */
@@ -92,7 +91,20 @@ code {
 }
 
 .play-button:hover {
-  transform: scale(1.2);
+  transform: scale(1.8); /* Grow on hover */
+}
+
+.album-title,
+.artist-link {
+  text-decoration: none;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.album-title:hover,
+.artist-link:hover {
+  color: #ffffff; /* Change to white on hover */
+  text-decoration: underline;
 }
 
 .album-title {
@@ -102,6 +114,7 @@ code {
   margin-top: 10px;
 }
 
+
 .artist-names {
   font-size: 14px;
   font-family: Helvetica, sans-serif;
@@ -109,15 +122,5 @@ code {
 }
 
 .artist-link {
-  text-decoration: none;
   color: #a0a0a0;
-  transition: color 0.3s;
-}
-
-.artist-link:hover {
-  color: #ffffff; /* Change to white on hover to match the design */
-}
-
-h1 {
- color: #ffffff;
 }

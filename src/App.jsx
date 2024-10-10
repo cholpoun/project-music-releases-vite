@@ -21,8 +21,8 @@ export const App = () => {
                   className="album-cover"
                 />
                 <div className="hover-overlay">
-                  <button className="play-button">▶</button>
                   <button className="favorite-button">❤</button>
+                  <button className="play-button">▶</button>
                   <button className="options-button">⋮</button>
                 </div>
               </div>
